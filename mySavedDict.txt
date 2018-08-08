@@ -1,1 +1,1 @@
-{"pakzd": {}, "lol": {"lol": "laughing out loud", "hi": "common greeting used", "good bye": "common greeting used to say bye"}, "test": {}, "a": {}, "aa": {}, "s": {}}
+{}
