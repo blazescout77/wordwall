@@ -80,6 +80,10 @@ view is the view function which allows user to view all of existing words and me
 **only allowed for exisiting users**
 
 pop quiz is the popquiz function which Tests user on words they already learnt only effective when there is a large collection of words **only allowed for existing users**
+
+Example
+
+![Image of Startup](https://i.imgur.com/xBWBBgL.gif)
   
 
 ## Credits
