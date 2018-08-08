@@ -1,47 +1,86 @@
 ## Python Word Wall
 
-## Code style
-Coded in Python 3 
-Beginner coder with no particular style may get messy at times will try to improve with more time
-
 ## Screenshots
-Include logo/demo screenshot etc.
+
+![Image of Startup](https://image.ibb.co/eWC9Yz/Screen_Shot_2018_08_08_at_10_28_25_PM.png)
+Sample of Start Up Code
 
 ## Tech/framework used
-Ex. -
 
 <b>Built with</b>
-- [Electron](https://electron.atom.io)
+- [Python3](https://www.python.org/)
 
 ## Features
-What makes your project stand out?
+This project offers a easy way to learn and store new words and to test yourself on them
 
 ## Code Example
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+
+Adding a new word
+```python
+def addnewword(user):
+  """Allows user to add new words to word wordwall
+
+  Enter new word when prompt what would you like to do is given
+
+  """
+  numbercheck = 0
+  for person, theirdictionary in everything.items():
+    if person == user:
+      numbercheck += 1
+      newword = input("Whats the newword you want to learn")
+      wordcheck(newword,person)
+      meaning = input("Whats the meaning of the word")
+      definitioncheck(meaning,person)
+      for word,itsmeaning in theirdictionary.items():
+          if word == newword:
+            print("You already have this word in your word wall")
+            addnewword(user)
+      theirdictionary[newword]=meaning
+      updated = json.dumps(everything)
+      t = open("mySavedDict.txt","w")
+      t.truncate(0)
+      t.write(updated)
+      t.close()
+      goagain()
+  if numbercheck == 0:
+    print("Pleae lah no results leh, try again")
+    startup()
+```
 
 ## Installation
-Provide step by step series of examples and explanations about how to get a development env running.
+<br>To run the program simply download files.<br/>  
+<br>Make sure they are in the same directory.<br/>
+<br>Run the main.py file.<br/> 
+<br>Check that mySavedDict has a blank dictionary.<br/> 
 
-## API Reference
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
 
 ## Tests
-Describe and show how to run the tests with code examples.
+No tests currently aivailable 3 marks gone rip.
 
 ## How to use?
-If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
+Basically there are five main functions you can use (new word/delete word/edit/view/pop quiz/help)
 
-## Contribute
+new word is the addnewword function which  Allows user to add new words to word wordwall
+Enter new word when prompt what would you like to do is given
+**Only allowed for existing users**
 
-Let people know how they can contribute into your project. A [contributing guideline](https://github.com/zulip/zulip-electron/blob/master/CONTRIBUTING.md) will be a big plus.
+delete word is the deleteword functon which Allows user to delete word of choice
+words keyed in are case sensitive, hence exact word needs to be keyed in when prompted to, function may not work if word is capped 
+**Only allowed for existing users**
+
+edit is the edit function which Allows user to edit exisitng word meanings 
+Users are allowed to do so by keying in the word and the new meaning
+**only allowed for exisiting users**
+
+view is the view function which allows user to view all of existing words and meanings
+**only allowed for exisiting users**
+
+pop quiz is the popquiz function which Tests user on words they already learnt only effective when there is a large collection of words **only allowed for existing users**
+  
 
 ## Credits
-Give proper credits. This could be a link to any repo which inspired you to build this project, any blogposts or links to people who contrbuted in this project. 
+Computer elective programme in Raffles Insitution.
+Ryan and Luck Heng.
 
-#### Anything else that seems useful
 
-## License
-A short snippet describing the license (MIT, Apache etc)
-
-MIT © [Yourname]()
+© [Pak Wai](2018)
