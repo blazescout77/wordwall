@@ -3,7 +3,6 @@
 ## Screenshots
 
 ![Image of Startup](https://image.ibb.co/eWC9Yz/Screen_Shot_2018_08_08_at_10_28_25_PM.png)
-Sample of Start Up Code
 
 ## Tech/framework used
 
@@ -48,10 +47,15 @@ def addnewword(user):
 ```
 
 ## Installation
-<br>To run the program simply download files.<br/>  
-<br>Make sure they are in the same directory.<br/>
-<br>Run the main.py file.<br/> 
-<br>Check that mySavedDict has a blank dictionary.<br/> 
+To run the program simply download files.
+
+Make sure they are in the same directory.
+
+Run the main.py file.
+
+Check that mySavedDict has a blank dictionary. 
+
+![Image of Startup](https://i.imgur.com/OJP2Pbj.gif)
 
 
 ## Tests
